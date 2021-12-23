@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+:root {
+    --primary: #3f8cff;
+    --lightGrey: #2a2c32;
+    --dark: #1f2128;
+    --lightBlue: #8bb9c9;
+    --purple: #6c5dd3;
+    --green: #92d27a;
+    --orange: #ff9975;
+    --white: #fff;
+}
