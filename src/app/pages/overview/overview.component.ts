@@ -14,7 +14,7 @@ export class OverviewComponent implements OnInit {
 
   ngOnInit(): void {
     this.removeClass();
-    this.changeName();
+    //this.changeName();
   }
 
   removeClass() {

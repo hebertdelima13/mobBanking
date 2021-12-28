@@ -1,29 +1,60 @@
 /*NAVBAR*/
 
+.navbar {
+    border-bottom: 1px solid #f1f1f2;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;    
     color: var(--dark);  
 }
+
+.navbar i {
+    color: var(--lightGrey);
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0;
+}
+
+.navbar h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0 0.8rem 0 1rem;
+}
+
+.navbar input {
+    font-size: 0.8rem;
+    color: var(--lightGrey);
+    width: 120px;
+    height: 20px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.badge-navbar {
+    margin-left: -0.4rem;
+    background: var(--orange);
+    padding: 1px 3px;
+}
+
+.badge-navbar h6 {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0!important;
+}
 /*NAVBAR*/
- 
-/*SIDEBAR-NAV ACTIVE*/
-.sidebar-nav .link-active {
-    width: 180px;
-    height: 45px;
-    background: var(--primary);
-    border-radius: 0.8rem;
-}
-
-.sidebar-nav .link-active a span {    
-    color: var(--white);
-}
-
-.sidebar-nav .link-active i {        
-    color: var(--white);
-}
-
-/*SIDEBAR-NAV ACTIVE*/
 
 /*SIDEBAR-NAV*/
 .sidebar-nav ul span {
@@ -70,39 +101,25 @@
 }
 /*SIDEBAR-NAV*/
 
-/*NAVBAR*/
-
-.navbar i {
-    color: var(--lightGrey);
+/*SIDEBAR-NAV ACTIVE*/
+.sidebar-nav .link-active {
+    width: 180px;
+    height: 45px;
+    background: var(--primary);
+    border-radius: 0.8rem;
 }
 
-.navbar span {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--dark);
+.sidebar-nav .link-active a span {    
+    color: var(--white);
 }
 
-.navbar h6 {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--dark);
-    margin: 0 0.8rem 0 1rem;
+.sidebar-nav .link-active i {        
+    color: var(--white);
 }
 
-.navbar input {
-    font-size: 0.8rem;
-    color: var(--lightGrey);
-    width: 120px;
-    height: 20px;
-    padding: 0;
-    box-shadow: none;
-}
+/*SIDEBAR-NAV ACTIVE*/
 
-.profile-img {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-/*NAVBAR*/
+
 
 
 
@@ -112,8 +129,22 @@
 
 @media (max-width: 375px) {
 
+    .profile-img {
+        margin-left: 0.5rem;
+    }
+
+    .sidebar-nav {
+        width: 220px;
+    }
+
+    .sidebar-nav-logo {
+        width: 40px;
+        border-right: none;
+        border-bottom: 1px solid #f1f1f2;
+    }
+
     /*NAVBAR*/
-    .logo {
+    .logo, .navbar h6, .navbar input, .navbar h1, .bi-search {
         display: none;
     }
 
@@ -159,6 +190,7 @@
     .active {
         display: block!important;
     }
+
     /*NAVBAR*/
 }
 
@@ -201,7 +233,7 @@
     .badge-mobile {
         top: 6px!important;
         right: 1px;
-        background: var(--orange)!important;
+        background: var(--orange);
     }
 
     .li-mobile {
@@ -228,6 +260,14 @@
         font-size: 1.5rem;        
     }
     /*SIDENAVBAR-NAV ACTIVE*/
+
+    /*NAVBAR*/
+
+    .navbar input {
+        display: none;
+    }
+
+    /*NAVBAR*/
 
 }
 
