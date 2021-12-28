@@ -8,10 +8,13 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 })
 export class OverviewComponent implements OnInit {
 
+  profileName: any
+
   constructor(public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
     this.removeClass();
+    this.changeName();
   }
 
   removeClass() {
@@ -32,6 +35,15 @@ export class OverviewComponent implements OnInit {
     const catchIdHamburguer = <HTMLInputElement>document.getElementById('hamburguer')
     catchIdToggle.classList.toggle('active')
     catchIdHamburguer.classList.toggle('active')
+  }
+
+  changeName() {
+    const person = prompt("Digite seu nome:");
+    if (person == null || person == "") {
+      this.profileName = `Profile`
+    } else {
+      this.profileName = person
+    }
   }
 
 }

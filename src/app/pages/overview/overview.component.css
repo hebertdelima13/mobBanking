@@ -70,6 +70,39 @@
 }
 /*SIDEBAR-NAV*/
 
+/*NAVBAR*/
+
+.navbar i {
+    color: var(--lightGrey);
+}
+
+.navbar span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.navbar h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0 0.8rem 0 1rem;
+}
+
+.navbar input {
+    font-size: 0.8rem;
+    color: var(--lightGrey);
+    width: 120px;
+    height: 20px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+/*NAVBAR*/
 
 
 
@@ -168,7 +201,6 @@
     .badge-mobile {
         top: 6px!important;
         right: 1px;
-        padding: 4px!important;
         background: var(--orange)!important;
     }
 

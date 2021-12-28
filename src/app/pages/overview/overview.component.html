@@ -7,7 +7,21 @@
                 <span id="hamburguer"></span>
             </button>
         </div>
-        <div class="col navbar bg-primary">navbar</div>
+        <div class="col navbar">
+            <div class="container">
+                <div class="col-2">
+                    <span>Overview</span>
+                </div>
+                <div class="col d-flex align-items-center justify-content-end">
+                    <i class="bi bi-search me-2"></i>
+                    <input class="form-control me-2 border-0" type="text" placeholder="Search something">
+                    <i class="bi bi-chat-dots pe-2 ms-3"></i>
+                    <i class="bi bi-bell pe-2 ms-3"></i>
+                    <h6 id="profile-name" [innerHTML]="profileName"></h6>
+                    <img class="profile-img rounded-circle"src="../../assets/profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="row">
@@ -41,21 +55,21 @@
                 <li class="d-flex align-items-center li-mobile mt-3 mb-4">
                     <button type="button" class="position-relative border-0 bg-transparent">
                         <a href=""><i class="bi bi-chat-dots pe-2 ms-3 position-relative"></i><span>Settings</span></a>
-                        <span class="badge-mobile position-absolute translate-middle p-2 bg-danger rounded-circle">
+                        <span class="badge-mobile position-absolute translate-middle p-1 bg-danger rounded-circle">
                         </span>
                     </button>
                 </li>
-                
+
                 <li class="d-flex align-items-center li-mobile mb-4">
                     <button type="button" class="position-relative border-0 bg-transparent">
                         <a href=""><i class="bi bi-bell pe-2 ms-3 position-relative"></i><span>Settings</span></a>
-                        <span class="badge-mobile position-absolute translate-middle p-2 bg-danger rounded-circle">
+                        <span class="badge-mobile position-absolute translate-middle p-1 bg-danger rounded-circle">
                         </span>
                     </button>
-                </li>  
+                </li>
                 <li class="d-flex align-items-center">
                     <a href=""><i class="bi bi-gear pe-2 ms-3 position-relative"></i><span>Settings</span></a>
-                </li>                              
+                </li>
             </ul>
 
         </div>
