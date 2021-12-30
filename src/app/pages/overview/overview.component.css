@@ -119,15 +119,157 @@
 
 /*SIDEBAR-NAV ACTIVE*/
 
+/*CARD LIGHT*/
 
+.card {
+    border-radius: 0.7rem;
+}
 
+.card-light {
+    background: #f7f7f7;
+}
 
+.card-light h6 {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #707175;
+    margin: 0;
+}
 
+.card-light span {
+    font-size: 0.8rem;
+    color: #e9e9eb;
+    font-weight: 500;
+}
+
+.card-light .card-icon-aprox {
+    transform: rotate(90deg);
+}
+
+.card-light .bi-activity {
+    font-size: 3rem;
+    color: #707175;
+}
+
+.card-light .card-information h5 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #707175;
+    margin: 0;
+}
+
+.card-light .card-information span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #707175;
+    margin: 0;
+}
+
+.card-light .card-count {
+    color: #707175;
+}
+
+.card-light .card-count h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #707175;
+}
+
+.card-light-valid-thru span {
+    font-size: 0.6rem;
+    color: #707175;
+    line-height: 0.5rem;
+}
+
+.card-light-valid-thru .card-valid-thru-icon {
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.card-light .logo-visa {
+    width: 2.4rem;
+    height: 0.8rem;
+}
+
+/*CARD BLUE*/
+
+.card-blue {
+    background: var(--primary);
+}
+
+.card-blue h6 {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0;
+}
+
+.card-blue span {
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.card-blue .card-icon-aprox {
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.card-blue .bi-activity {
+    font-size: 3rem;
+    color: #000;
+}
+
+.card-blue .card-information h5 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0;
+}
+
+.card-blue .card-information span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0;
+}
+
+.card-blue .card-count {
+    color: var(--white);
+}
+
+.card-blue .card-count h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.card-blue-valid-thru span {
+    font-size: 0.6rem;
+    color: var(--white);
+    line-height: 0.5rem;
+}
+
+.card-blue-valid-thru .card-valid-thru-icon {
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.card-blue .logo-visa {
+    width: 2.4rem;
+    height: 0.8rem;
+}
+
+/*CARD BLUE*/
 
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
+
+    .badge-navbar h6 {
+        display: block!important;
+    }
 
     .profile-img {
         margin-left: 0.5rem;
@@ -194,7 +336,7 @@
     /*NAVBAR*/
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 415px) and (max-width: 768px) {
 
     /*SIDENAVBAR*/
     .sidebar-nav-logo {
