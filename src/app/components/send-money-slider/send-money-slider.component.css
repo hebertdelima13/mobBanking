@@ -1,0 +1,33 @@
+.send-money-mobile h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.send-money-mobile i {
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.send-money-mobile button {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #f7f7f7;
+    border-radius: 50%;
+    background: none;
+    padding: 0;
+}
+
+.send-money-mobile span {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.send-money-mobile .bi-arrow-right-short {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.send-money-profile-img-slider {
+    width: 3rem;
+    height: 3rem;
+}

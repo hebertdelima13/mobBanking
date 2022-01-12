@@ -1,0 +1,80 @@
+<div class="d-flex align-items-center justify-content-between send-money-mobile">
+    <h2>Send Money</h2>
+    <div>
+        <i class="bi bi-arrow-left-circle px-1" (click)="slidePrev()"></i>
+        <i class="bi bi-arrow-right-circle px-2" (click)="slideNext()"></i>
+    </div>
+</div>
+
+<div class="send-money-mobile">
+    <swiper class="mt-2" #swiper [config]="config">
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><i class="bi bi-arrow-right-short"></i></button>
+                    <span class="mt-1">Send</span>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><img src="https://randomuser.me/api/portraits/men/78.jpg"
+                            class="send-money-profile-img-slider rounded-circle me-2"></button>
+                    <span class="mt-1">Kevin</span>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><img src="https://randomuser.me/api/portraits/men/5.jpg"
+                            class="send-money-profile-img-slider rounded-circle me-2"></button>
+                    <span class="mt-1">John</span>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><img src="https://randomuser.me/api/portraits/men/34.jpg"
+                            class="send-money-profile-img-slider rounded-circle me-2"></button>
+                    <span class="mt-1">Thomas</span>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><img src="https://randomuser.me/api/portraits/men/80.jpg"
+                            class="send-money-profile-img-slider rounded-circle me-2"></button>
+                    <span class="mt-1">Arthur</span>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><img src="https://randomuser.me/api/portraits/men/30.jpg"
+                            class="send-money-profile-img-slider rounded-circle me-2"></button>
+                    <span class="mt-1">Martin</span>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="d-flex">
+                <div class="d-flex text-center flex-column">
+                    <button><i class="bi bi-arrow-right-short"></i></button>
+                    <span class="mt-1">Send</span>
+                </div>
+            </div>
+        </ng-template>
+
+    </swiper>
+</div>
