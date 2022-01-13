@@ -1,0 +1,569 @@
+/*HEADER*/
+.navbar {
+    height: 5rem;
+}
+
+.navbar-brand {
+    width: 220px;
+    height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;    
+    color: var(--dark);  
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.navbar-nav i {
+    color: var(--lightGrey);
+}
+
+.navbar-nav .badge {
+    font-size: 0.4rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar-nav input {
+    font-size: 0.8rem;
+    color: var(--lightGrey);
+    width: 120px;
+    height: 20px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.navbar-nav h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0 0.8rem 0 1rem;
+}
+
+.navbar-nav .profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*SIDEBAR*/
+
+.sidebar {
+    width: 220px;
+}
+
+.sidebar h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.sidebar i {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.sidebar a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.sidebar a.active {
+    width: 100%;
+    height: 45px;
+    background: var(--primary);
+    border-radius: 0.8rem;
+    color: var(--white);
+}
+
+.sidebar a.active i {
+    color: var(--white);
+}
+
+.sidebar .badge {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.nav-link-mobile {
+    display: none;
+}
+
+.badge {
+    background: var(--orange);
+}
+
+.sidebar-divider {
+    max-width: 175px;
+}
+
+/*MAIN*/
+
+/*CARD LIGHT*/
+
+.card {
+    border-radius: 0.7rem;
+}
+
+.card-light {
+    background: #f7f7f7;
+}
+
+.card-light h6 {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #707175;
+    margin: 0;
+}
+
+.card-light span {
+    font-size: 0.8rem;
+    color: #e9e9eb;
+    font-weight: 500;
+}
+
+.card-light .card-icon-aprox {
+    transform: rotate(90deg);
+}
+
+.card-light .bi-activity {
+    font-size: 3rem;
+    color: #707175;
+}
+
+.card-light .card-information h5 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #707175;
+    margin: 0;
+}
+
+.card-light .card-information span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #707175;
+    margin: 0;
+}
+
+.card-light .card-count {
+    color: #707175;
+}
+
+.card-light .card-count h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #707175;
+}
+
+.card-light-valid-thru span {
+    font-size: 0.6rem;
+    color: #707175;
+    line-height: 0.5rem;
+}
+
+.card-light-valid-thru .card-valid-thru-icon {
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.card-light .logo-visa {
+    width: 2.4rem;
+    height: 0.8rem;
+}
+
+/*CARD BLUE*/
+
+.card-blue {
+    background: var(--primary);
+}
+
+.card-blue h6 {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0;
+}
+
+.card-blue span {
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.card-blue .card-icon-aprox {
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.card-blue .bi-activity {
+    font-size: 3rem;
+    color: #000;
+}
+
+.card-blue .card-information h5 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0;
+}
+
+.card-blue .card-information span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0;
+}
+
+.card-blue .card-count {
+    color: var(--white);
+}
+
+.card-blue .card-count h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.card-blue-valid-thru span {
+    font-size: 0.6rem;
+    color: var(--white);
+    line-height: 0.5rem;
+}
+
+.card-blue-valid-thru .card-valid-thru-icon {
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.card-blue .logo-visa {
+    width: 2.4rem;
+    height: 0.8rem;
+}
+
+/*LAST ACTIVITIES*/
+
+.last-activities {
+    color: var(--black);    
+}
+
+.last-activities h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.last-activities button {
+    width: 110px;
+    height: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    background: #f7f7f7;
+}
+
+.last-activities-items {
+    position: relative;
+}
+
+.last-activities-items:hover i {
+    color: var(--white);
+}
+
+.last-activities-items:hover {
+    transform: scale(101%);
+    background: #f7f7f7;
+    border-radius: 0.8rem;
+}
+
+.last-activities-items:hover::after {
+    content: "";
+    background: var(--primary);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 0.8rem;
+}
+
+.last-activities-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.8rem;
+    background: #f7f7f7;
+}
+
+.last-activities-icon i {
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.last-activities-desc {
+    font-size: 0.8rem;
+}
+
+.last-activities-desc h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.last-activities-desc span {
+    font-weight: 500;
+    color: #a9a9ab;
+}
+
+.last-activities-price span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/*SEND MONEY*/
+
+.send-money {
+    color: var(--black);    
+}
+
+.send-money h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.send-money h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.send-money input {
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 0.5rem;
+    width: 120px;
+    height: 40px;
+    box-shadow: none;
+    border: 2px solid var(--primary);
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.send-money .send-money-choose button{
+    width: 160px;
+    height: 40px;
+    background: #f7f7f7;
+    border-radius: 0.8rem;
+    color: var(--dark);
+}
+
+.send-money .send-money-profile-img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.send-money span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.send-money i {
+    font-size: 0.5rem;
+}
+
+.send-money button {
+    width: 70px;
+    height: 40px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 0.8rem;
+    background: var(--primary);
+}
+
+/*INCOMES AND EXPENSES*/
+
+.incomes-expenses {
+    color: var(--black);
+}
+
+.incomes-expenses h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.incomes-expenses span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.incomes-expenses button {
+    width: 125px;
+    height: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    background: #f7f7f7;
+}
+
+.incomes-expenses i {
+    font-size: 0.5rem;
+}
+
+
+@media (max-width: 575px) {   
+    
+    /*HEADER*/
+
+    #btn-mobile {
+        display: flex;
+        background: none;
+        border: none;
+    }
+    
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    
+    #hamburguer::after {
+        width: 10px;
+    }
+    
+    #hamburguer.active {
+        border-top: transparent;
+    }
+    
+    #hamburguer.active::before {
+        transform: rotate(135deg);
+    }
+    
+    #hamburguer.active::after {
+        transform: rotate(-135deg);
+        top: -7px;
+        width: 20px;
+    }
+
+    /*MAIN*/
+
+    .slider-controls h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .slider-controls i {
+        font-size: 1.5rem;
+    }
+
+    .last-activities {
+        border: none!important;
+        padding: 0 8px 0 12px!important;
+    }
+
+    
+}
+
+@media (min-width: 576px) and (max-width: 820px) {
+    
+
+    /*HEADER*/
+    .navbar-brand {
+        justify-content: center;
+        width: 110px;
+    }
+
+    .navbar-brand .logo {
+        width: 158px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navbar-brand .logo-title {
+        display: none;        
+    }
+
+    /*SIDEBAR*/
+
+    .sidebar {
+        display: block!important;
+        text-align: center!important;
+        width: 110px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar h6 {
+        display: flex!important;
+        justify-content: center!important;
+        text-align: center!important;
+    }
+
+    .sidebar a.active {
+        display: inline-block!important;
+        text-align: center!important;
+        width: 50%;
+    }
+
+    .sidebar a span {
+        display: none;
+    }
+
+    .sidebar i {
+        padding: 0!important;
+    }
+
+    .sidebar .badge {
+        font-size: 0.4rem;
+    }
+
+    .nav-link-desktop {
+        display: none!important;
+    }
+
+    .nav-link-mobile {
+        display: inline-block!important;
+        text-align: center!important;
+    }
+
+    .sidebar-divider {
+        max-width: 68.3px;
+        margin-left: 1.3rem;
+    }
+
+    /*MAIN*/
+
+    .card {
+        width: 290px;
+    }
+
+    /*LAST ACTIVITIES*/
+
+    .last-activities {
+        border: none!important;
+        padding: 0 12px 0 0!important;
+    }
+
+    .order2 {
+        order: 1;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order3 {
+        order: 3;
+    }
+}

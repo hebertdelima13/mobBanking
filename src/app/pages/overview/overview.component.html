@@ -1,0 +1,386 @@
+<header class="navbar flex-nowrap p-0">
+    <div class="navbar-brand col-md-3 col-lg-2 me-0 px-3 d-none d-sm-flex align-items-center border-end border-2">
+      <i class="logo bi bi-globe"></i>
+      <span class="logo ms-2 logo-title">Mob.</span>
+    </div>
+    <button class="d-sm-none px-4 border-bottom border-2 w-100 h-100 align-items-center" id="btn-mobile"
+      (click)="toggleActive()">
+      <span id="hamburguer"></span>
+    </button>
+    <h1 class="w-100 px-4 px-sm-5 d-none d-sm-flex h-100 border-bottom border-2 align-items-center my-0">Overview</h1>
+    <div class="navbar-nav h-100 border-bottom border-2 justify-content-center">
+      <div class="nav-item text-nowrap d-flex align-items-center">
+        <i class="bi bi-search me-lg-3 me-sm-1 d-none d-sm-flex"></i>
+        <input class="form-control me-2 border-0 d-none d-lg-flex" type="text" placeholder="Search something">
+        <i class="bi bi-chat-dots pe-2 ms-3 position-relative">
+          <span class="position-absolute top-0 start-10 translate-middle badge rounded-circle ms-1">
+            4
+          </span>
+        </i>
+        <i class="bi bi-bell ms-3 pe-3 pe-lg-0 position-relative">
+          <span class="position-absolute top-0 start-10 translate-middle badge rounded-circle">
+            2
+          </span>
+        </i>
+        <h6 class="d-none d-lg-flex" id="profile-name">{{user}}</h6>
+        <img class="profile-img rounded-circle me-4 me-sm-5" src="./assets/profile.jpg" alt="">
+      </div>
+    </div>
+  </header>
+  
+  <div class="container-fluid">
+    <div class="row flex-nowrap overflow-hidden">
+      <nav class="col-md-3 col-lg-2 d-sm-block sidebar collapse border-end border-2" id="toggle">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-1 mb-2 mt-2">
+          <span>Menu</span>
+        </h6>
+        <ul class="nav flex-column px-1 mt-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="bi bi-house-door pe-2"></i><span>Overview</span>
+            </a>
+          </li>
+          <li class="nav-item nav-link mt-1">
+            <a href="#">
+              <i class="bi bi-credit-card pe-2"></i><span>Cards</span>
+            </a>
+          </li>
+          <li class="nav-item nav-link mt-1">
+            <a href="#">
+              <i class="bi bi-bar-chart-line pe-2"></i><span>Statistics</span>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="sidebar-divider border-bottom border-2 mt-4"></div>
+  
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-1 mt-4 pt-2">
+          <span>Account</span>
+        </h6>
+        <ul class="nav flex-column px-1 mt-3">
+          <li class="nav-item nav-link nav-link-desktop d-flex justify-content-between">
+            <a href="#">
+              <div><i class="bi bi-chat-dots pe-2"></i><span>Inbox</span></div>
+            </a>
+            <div>
+              <span class="badge rounded-circle">4</span>
+            </div>
+          </li>
+          <li class="nav-item nav-link nav-link-desktop d-flex justify-content-between mt-1">
+            <a href="#">
+              <div><i class="bi bi-bell pe-2"></i><span>Notification</span></div>
+            </a>
+            <div>
+              <span class="badge rounded-circle">2</span>
+            </div>
+          </li>
+          <li class="nav-item mt-1 nav-link-mobile position-relative">
+            <a href="#">
+              <i class="bi bi-chat-dots"></i>
+            </a>
+            <span class="position-absolute top-0 start-10 translate-middle badge rounded-circle">
+              4
+            </span>
+          </li>
+          <li class="nav-item mt-3 nav-link nav-link-mobile position-relative">
+            <a href="#">
+              <i class="bi bi-bell"></i>
+            </a>
+            <span class="position-absolute top-45 start-10 translate-middle badge rounded-circle">
+              2
+            </span>
+          </li>
+          <li class="nav-item mt-1 nav-link">
+            <a href="#">
+              <i class="bi bi-gear pe-2"></i><span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+      <main class="col-sm-9 col-sm-10 ps-4 pe-4 pe-lg-5 ps-sm-5">
+        <div class="mt-4">
+          <div class="slider-controls d-flex align-items-center justify-content-between d-sm-none">
+            <h1>Overview</h1>
+            <div>
+              <button class="border-0 bg-transparent"><i class="bi bi-arrow-left-circle"
+                  (click)="slidePrev()"></i></button>
+              <button class="border-0 bg-transparent"><i class="bi bi-arrow-right-circle"
+                  (click)="slideNext()"></i></button>
+            </div>
+          </div>
+          <swiper class="mt-2" #swiper [config]="config">
+            <ng-template swiperSlide>
+              <div class="card border-0 p-4 card-light card-1">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img class="logo-visa me-2" src="./assets/visa-logo.png" alt="">
+                    <span>|</span>
+                    <h6 class="ms-2">MobBanking Pro</h6>
+                  </div>
+                  <div class="card-icon-aprox">
+                    <i class="bi bi-wifi"></i>
+                  </div>
+                </div>
+                <div class="my-2">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div class="card-information d-flex align-items-center justify-content-between">
+                  <h5>Balance</h5>
+                  <span><span class="me-2">****</span>2340</span>
+                </div>
+                <div class="card-count d-flex justify-content-between mt-1">
+                  <div class="d-flex align-items-center">
+                    <h4 class="m-0">$2,470</h4>
+                    <i class="bi bi-arrow-up-circle ms-2"></i>
+                  </div>
+                  <div class="d-flex card-light-valid-thru align-items-center">
+                    <span class="card-valid-thru-icon me-2 text-center">VALID
+                      <br>THRU</span>
+                    <span>02/21</span>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+  
+            <ng-template swiperSlide>
+              <div class="card border-0 p-4 card-blue card-2">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img class="logo-visa me-2" src="./assets/visa-logo-white.png" alt="">
+                    <span>|</span>
+                    <h6 class="ms-2">MobBanking Classic</h6>
+                  </div>
+                  <div class="card-icon-aprox">
+                    <i class="bi bi-wifi"></i>
+                  </div>
+                </div>
+                <div class="my-2">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div class="card-information d-flex align-items-center justify-content-between">
+                  <h5>Balance</h5>
+                  <span><span class="me-2">****</span>3456</span>
+                </div>
+                <div class="card-count d-flex justify-content-between mt-1">
+                  <div class="d-flex align-items-center">
+                    <h4 class="m-0">$6,450</h4>
+                    <i class="bi bi-arrow-up-circle ms-2"></i>
+                  </div>
+                  <div class="d-flex card-blue-valid-thru align-items-center">
+                    <span class="card-valid-thru-icon me-2 text-center">VALID
+                      <br>THRU</span>
+                    <span>07/23</span>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+  
+            <ng-template swiperSlide>
+              <div class="card border-0 p-4 card-light card-3">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img class="logo-visa me-2" src="./assets/visa-logo.png" alt="">
+                    <span>|</span>
+                    <h6 class="ms-2">MobBanking Pro</h6>
+                  </div>
+                  <div class="card-icon-aprox">
+                    <i class="bi bi-wifi"></i>
+                  </div>
+                </div>
+                <div class="my-2">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div class="card-information d-flex align-items-center justify-content-between">
+                  <h5>Balance</h5>
+                  <span><span class="me-2">****</span>0476</span>
+                </div>
+                <div class="card-count d-flex justify-content-between mt-1">
+                  <div class="d-flex align-items-center">
+                    <h4 class="m-0">$3,260</h4>
+                    <i class="bi bi-arrow-up-circle ms-2"></i>
+                  </div>
+                  <div class="d-flex card-light-valid-thru align-items-center">
+                    <span class="card-valid-thru-icon me-2 text-center">VALID
+                      <br>THRU</span>
+                    <span>06/22</span>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </swiper>
+        </div>
+  
+  
+  
+        <div class="row mt-5">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5 last-activities pe-4 border-end border-2">
+  
+            <div class="row send-money d-none d-sm-flex d-lg-none mb-4">
+              <h2>Send Money</h2>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <h6>Transfers</h6>
+                <input class="form-control" type="number" placeholder="$">
+                <span>To</span>
+                <div class="send-money-choose">
+                  <button class="border-0 ms-2"><img src="./assets/profile.jpg"
+                      class="send-money-profile-img rounded-circle me-2"><span>Kevin Johnson</span><i
+                      class="bi bi-chevron-down ms-1"></i></button>
+                </div>
+                <button class="border-0">Send</button>
+              </div>
+            </div>
+  
+            <div class="row send-money d-flex d-sm-none mb-4">
+              <app-send-money-slider></app-send-money-slider>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center">
+              <h2>Last activities</h2>
+              <button class="border-0">Ask a report</button>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-4 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-dribbble"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Dribbble</h6>
+                  <span>30 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$19,99</span>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center mt-1 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-behance"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Behance</h6>
+                  <span>29 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$29,99</span>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center mt-1 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-spotify"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Spotify</h6>
+                  <span>28 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$9,99</span>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center mt-1 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-paypal"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Paypal</h6>
+                  <span>27 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$54,00</span>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center mt-1 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-apple"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Apple, inc</h6>
+                  <span>27 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$54,00</span>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center mt-1 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-apple"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Apple, inc</h6>
+                  <span>27 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$54,00</span>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center mt-1 p-2 last-activities-items">
+              <div class="d-flex align-items-center">
+                <div class="last-activities-icon d-flex align-items-center justify-content-center">
+                  <i class="bi bi-apple"></i>
+                </div>
+                <div class="last-activities-desc ms-3">
+                  <h6 class="my-0">Apple, inc</h6>
+                  <span>27 November, 2020</span>
+                </div>
+              </div>
+              <div class="last-activities-price">
+                <span>-$54,00</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7 ps-lg-5">
+            <div class="row send-money d-none d-lg-flex">
+              <h2>Send Money</h2>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <h6>Transfers</h6>
+                <input class="form-control" type="number" placeholder="$">
+                <span>To</span>
+                <div class="send-money-choose">
+                  <button class="border-0 ms-2"><img src="./assets/profile.jpg"
+                      class="send-money-profile-img rounded-circle me-2"><span>Kevin Johnson</span><i
+                      class="bi bi-chevron-down ms-1"></i></button>
+                </div>
+                <button class="border-0">Send</button>
+              </div>
+            </div>
+  
+            <div class="border-bottom border-2 mt-4 d-none d-lg-flex"></div>
+  
+            <div class="row incomes-expenses mt-4">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="d-none d-sm-flex">Incomes & Expenses</h2>
+                <h2 class="d-flex d-sm-none">Report</h2>
+                <div>
+                  <span>Sort by</span>
+                  <button class="border-0 ms-2">Last 30 days <i class="bi bi-chevron-down ms-1"></i></button>
+                </div>
+              </div>
+              <div>
+                <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"
+                  [legend]="lineChartLegend">
+                </canvas>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
