@@ -29,7 +29,6 @@
 - [Ng2-charts](https://www.npmjs.com/package/ng2-charts)
 - [Swiper](https://swiperjs.com/)
 - [Sweet Alert](https://sweetalert2.github.io/)
-- [Faker.js](https://github.com/marak/Faker.js/)
 - [VS Code](https://code.visualstudio.com/)
 
 Feito por Hebert - <a href="https://www.linkedin.com/in/hebert-fernandes/" target="_blank">Linkedin
