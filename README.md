@@ -22,7 +22,7 @@
 ## Tecnologias
 
 - [Angular](https://angular.io/)
-- [Typescript][ts]
+- [Typescript][https://www.typescriptlang.org/]
 - [Bootstrap](https://getbootstrap.com/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [Chart.js](https://www.chartjs.org/)
@@ -30,7 +30,7 @@
 - [Swiper](https://swiperjs.com/)
 - [Sweet Alert](https://sweetalert2.github.io/)
 - [Faker.js](https://github.com/marak/Faker.js/)
-- [VS Code][vscode]
+- [VS Code][https://code.visualstudio.com/]
 
 Feito por Hebert - <a href="https://www.linkedin.com/in/hebert-fernandes/" target="_blank">Linkedin
 </a>
